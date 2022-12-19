@@ -1,0 +1,11 @@
+:root {
+    --font-primari-color: #810081;
+    --font-secundari-color: #fff;
+    --bg-color: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    --bg-secondari-color: linear-gradient(180deg, rgba(129,0,129,1) 21%, rgba(4,4,88,1) 100%);
+    
+}
+*{
+    background-color: var(--bg-color) ;
+    font-family: 'Roboto Slab';
+}
