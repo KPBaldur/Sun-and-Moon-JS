@@ -1,11 +1,52 @@
 :root {
     --font-primari-color: #810081;
     --font-secundari-color: #fff;
-    --bg-color: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-    --bg-secondari-color: linear-gradient(180deg, rgba(129,0,129,1) 21%, rgba(4,4,88,1) 100%);
+     --bg-color: #eeaeca;
+    --bg-secondari-color: #040458;
     
 }
-*{
+
+body{
     background-color: var(--bg-color) ;
+    color: var(--font-primari-color);
     font-family: 'Roboto Slab';
+    font-size: 1.2rem;
+    height: 100hv;
+    display: flex;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+main {
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--bg-secondari-color);
+    padding: 1.4rem 3rem;
+    border-radius: 5rem;
+    display: inline-block;
+}
+
+a {
+    color: var(--font-secundari-color);
+    text-decoration: none;
+}
+
+p {
+    font-size: 2rem;
+    line-height: 1.6rem;
+}
+
+section {
+    max-width: 800px;
+    height: 100hv;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
