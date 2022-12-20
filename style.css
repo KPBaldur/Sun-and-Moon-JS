@@ -9,20 +9,21 @@
 body{
     background-color: var(--bg-color) ;
     color: var(--font-primari-color);
-    font-family: 'Roboto Slab';
+    font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
+    font-weight: 300;
     height: 100hv;
     display: flex;
 }
 
 h1{
-    font-size: 4rem;
-    font-weight: 300;
+    font-family: 'Oswald', sans-serif;
+    font-size: 6rem;
     text-transform: uppercase;
     margin: 0;
 }
 
-main {
+.heading {
     text-align: center;
 }
 
@@ -36,6 +37,7 @@ main {
 a {
     color: var(--font-secundari-color);
     text-decoration: none;
+    
 }
 
 p {
@@ -45,8 +47,25 @@ p {
 
 section {
     max-width: 800px;
-    height: 100hv;
+    height: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
+    
+}
+
+.theme-switch-wrapper {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.theme-switch {
+    display: block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
 }
