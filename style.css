@@ -1,71 +1,17 @@
+
 :root {
     --font-primari-color: #810081;
     --font-secundari-color: #fff;
-     --bg-color: #eeaeca;
-    --bg-secondari-color: #040458;
+    --bg-color:  #97eeff;
+    --bg-secondary-color: #6c1c95;
     
 }
+
+
+
 
 body{
-    background-color: var(--bg-color) ;
-    color: var(--font-primari-color);
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 300;
-    height: 100hv;
-    display: flex;
-}
-
-h1{
-    font-family: 'Oswald', sans-serif;
-    font-size: 6rem;
-    text-transform: uppercase;
-    margin: 0;
-}
-
-.heading {
-    text-align: center;
-}
-
-.btn-primary {
-    background-color: var(--bg-secondari-color);
-    padding: 1.4rem 3rem;
-    border-radius: 5rem;
-    display: inline-block;
-}
-
-a {
-    color: var(--font-secundari-color);
-    text-decoration: none;
-    
-}
-
-p {
-    font-size: 2rem;
-    line-height: 1.6rem;
-}
-
-section {
-    max-width: 800px;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    
-}
-
-.theme-switch-wrapper {
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.theme-switch {
-    display: block;
-    height: 34px;
-    position: relative;
-    width: 60px;
-    margin: 0 auto;
-    margin-bottom: 1rem;
+    height: 100vh;
+    background: #fff;
+    color: black;
 }
