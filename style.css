@@ -3,6 +3,8 @@
     --font-secundari-color: #fff;
     --bg-color:  #97eeff;
     --bg-secondary-color: #6c1c95;
+    --color-btn: #f81b9c;
+    --color-secondary-btn: #79114d;
     
 }
 
@@ -15,7 +17,7 @@
 body{
     /*height: 100vh;*/
     background: var(--bg-color);
-    color: black;
+    color: var(--font-primari-color);
     font-family: Roboto;
     transition: ease 1.5s;
 }
@@ -32,7 +34,6 @@ body{
 .boton {
     margin: 10px;
 }
-
 
 .Switch{
     display: inline-block;
@@ -64,3 +65,22 @@ body{
     display: none;
 }
 
+
+
+
+.btn-primary {
+    display: flexbox;
+    margin: 1rem;
+    padding: 1rem;
+    height: 5rem;
+    width: 20rem;
+    border-radius: 2rem;
+    background-color: var(--color-btn) ;
+    color: var(--font-secundari-color);
+    text-decoration: none;
+    transition: ease .7s;
+}
+
+.btn-primary:hover{
+    background-color: var(--color-secondary-btn);
+}
