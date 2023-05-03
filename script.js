@@ -7,6 +7,7 @@ const SecondarycolorPrimary = getComputedStyle(document.documentElement).getProp
 
 checkbox.onclick = function(){
     if (checkbox.checked){
+        imagen.classList.add('hide');
         imagen.src = "img/Luna.png";
         document.body.style.backgroundColor=  SecondarycolorPrimary;
         document.body.style.color = "white";
@@ -14,6 +15,7 @@ checkbox.onclick = function(){
             h1.style.color = "white";
         });
         } else {
+            imagen.classList.add('hide');
             imagen.src = "img/celestia.png";
             document.body.style.backgroundColor = colorPrimary;
             document.body.style.color= "black";
@@ -21,4 +23,8 @@ checkbox.onclick = function(){
                 h1.style.color = "black";
             })
         }
+
+    setTimeout (() => {
+        imagen.classList.remove('hide');
+    }, 100);
 }

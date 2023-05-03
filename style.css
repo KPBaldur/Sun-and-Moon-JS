@@ -17,6 +17,16 @@ body{
     background: var(--bg-color);
     color: black;
     font-family: Roboto;
+    transition: ease 1.5s;
+}
+
+.cuteMark{
+    opacity: 1;
+    transition: ease 1.5s opacity;
+}
+
+.cuteMark.hide {
+    opacity: 0;
 }
 
 .boton {
@@ -54,29 +64,3 @@ body{
     display: none;
 }
 
-
-
-/* 
-
-.Switch{
-    display: inline-block;
-    width: 55px;
-    height: 30px;
-    background: #f3f3f3;
-    border-radius: 100px;
-    position: relative;
-    cursor: pointer;
-}
-
-.Switch:after{
-    position: absolute;
-    content: '';
-    width: 22px;
-    height: 22px;
-    background: red;
-    border-radius: 100px;
-    top: 4px;
-    left: 5px;
-}
-
-*/
