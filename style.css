@@ -66,7 +66,17 @@ body{
 }
 
 
+.heading{
+    display: flexbox;
+    margin: 2rem;
+    padding: 1rem;
+    height: 550px;
+    width: 40%;
+    background-color: var(--bg-secondary-color);
+    justify-content: center;
+    text-align: center;
 
+}
 
 .btn-primary {
     display: flexbox;
