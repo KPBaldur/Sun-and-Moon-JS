@@ -15,16 +15,16 @@
 }
 
 body{
-    /*height: 100vh;*/
+    height: 100vh;
     background: var(--bg-color);
-    color: var(--font-primari-color);
+    color: var(--font-secundari-color);
     font-family: Roboto;
-    transition: ease 1.5s;
+    transition: ease 0.5s;
 }
 
 .cuteMark{
     opacity: 1;
-    transition: ease 1.5s opacity;
+    transition: ease 0.5s opacity;
 }
 
 .cuteMark.hide {
@@ -71,19 +71,18 @@ body{
     margin: 2rem;
     padding: 1rem;
     height: 550px;
-    width: 40%;
+    width: 60%;
     background-color: var(--bg-secondary-color);
     justify-content: center;
     text-align: center;
-
 }
 
 .btn-primary {
-    display: flexbox;
+    display: inline-block;
     margin: 1rem;
     padding: 1rem;
-    height: 5rem;
-    width: 20rem;
+    height: 30px;
+    width: 60%;
     border-radius: 2rem;
     background-color: var(--color-btn) ;
     color: var(--font-secundari-color);

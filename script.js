@@ -5,6 +5,7 @@ const texto = document.querySelectorAll('h1');
 const colorPrimary = getComputedStyle(document.documentElement).getPropertyValue('--bg-color');
 const SecondarycolorPrimary = getComputedStyle(document.documentElement).getPropertyValue('--bg-secondary-color');
 
+
 checkbox.onclick = function(){
     if (checkbox.checked){
         imagen.classList.add('hide');
