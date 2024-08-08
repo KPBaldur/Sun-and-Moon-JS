@@ -1,30 +1,36 @@
 :root {
-    --font-primari-color: #810081;
-    --font-secundari-color: #fff;
+    --font-primary-color: #810081;
+    --font-secondary-color: #fff;
     --bg-color:  #97eeff;
     --bg-secondary-color: #6c1c95;
     --color-btn: #f81b9c;
     --color-secondary-btn: #79114d;
-    
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     height: 100vh;
     background: var(--bg-color);
-    color: var(--font-secundari-color);
-    font-family: Roboto;
-    transition: ease 0.5s;
+    color: var(--font-secondary-color);
+    font-family: Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-.cuteMark{
+main {
+    text-align: center;
+}
+
+.cuteMark {
     opacity: 1;
-    transition: ease 0.5s opacity;
+    transition: opacity 0.5s ease;
 }
 
 .cuteMark.hide {
@@ -32,64 +38,73 @@ body{
 }
 
 .boton {
-    margin: 10px;
+    margin: 20px auto;
 }
 
-.Switch{
+.Switch {
+    position: relative;
     display: inline-block;
     width: 55px;
     height: 30px;
-    background: #f3f3f3;
-    border-radius: 100px;
-    position: relative;
-    cursor: pointer;
 }
 
-#checkbox:checked~ .Switch{
-    background: #6c1c95;
-}
-
-
-.Switch:after{
-    position: absolute;
-    content: '';
-    width: 22px;
-    height: 22px;
-    background: red;
-    border-radius: 100px;
-    top: 4px;
-    left: 5px;
-}
-
-#checkbox{
+.Switch input {
     display: none;
 }
 
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 30px;
+}
 
-.heading{
-    display: flexbox;
-    margin: 2rem;
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #6c1c95;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.heading {
+    margin: 2rem auto;
     padding: 1rem;
-    height: 550px;
-    width: 60%;
+    max-width: 600px;
     background-color: var(--bg-secondary-color);
-    justify-content: center;
+    border-radius: 10px;
     text-align: center;
 }
 
 .btn-primary {
     display: inline-block;
-    margin: 1rem;
+    margin: 1rem 0;
     padding: 1rem;
-    height: 30px;
     width: 60%;
     border-radius: 2rem;
-    background-color: var(--color-btn) ;
-    color: var(--font-secundari-color);
+    background-color: var(--color-btn);
+    color: var(--font-secondary-color);
     text-decoration: none;
-    transition: ease .7s;
+    transition: background-color 0.7s ease;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: var(--color-secondary-btn);
 }
